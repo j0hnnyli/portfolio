@@ -27,11 +27,7 @@ const ShowCase = ({ sectionRef, fn, contact }: Props) => {
             </span>
           </h2>
 
-          <TypeWriter
-            strings={["FrontEnd Developer", "Full Stack Developer"]}
-            auto={true}
-            loop={true}
-          />
+          <h2 className="text-white text-2xl md:text-3xl mt-3">Full Stack Developer</h2>
 
           <button
             onClick={() => fn(contact)}
