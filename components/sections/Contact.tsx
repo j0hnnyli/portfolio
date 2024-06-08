@@ -27,31 +27,32 @@ const ContactSection = ({sectionRef} : Props) => {
           <div className='flex items-center justify-between bg-stone-500 py-2 px-4 rounded-2xl w-full'>
             <IoMdMail className='text-3xl text-orange-500'/>
             <div className='text-center w-full'>
-              <h2 className='text-white text-2xl font-bold ml-3'>lijohnny31@gmail.com</h2>
+              <h2 className='text-white text-xl'>lijohnny31@gmail.com</h2>
             </div>
           </div>
 
           <div className='flex items-center justify-between bg-stone-500 py-2 px-4 rounded-2xl mx-5 w-full my-5 lg:my-0'>
             <FaPhoneAlt className='text-3xl text-orange-500'/>
             <div className='text-center w-full'>
-              <h2 className='text-white text-2xl font-bold ml-3'>(347) 395-2298</h2>
+              <h2 className='text-white text-xl'>(347) 395-2298</h2>
             </div>
           </div>
 
           <div className='lg:hidden flex items-center justify-between bg-stone-500 py-2 px-4 rounded-2xl w-full'> 
             <FaLocationDot className='text-3xl text-orange-500'/>
             <div className='text-center w-full'>
-              <h2 className='text-white text-2xl font-bold ml-3 text-center'>New York, New York, Manhattan</h2>
+              <h2 className='text-white text-xl text-center'>New York, New York</h2>
             </div>
           </div>
         </div>
 
         <div className='hidden lg:flex items-center justify-between bg-stone-500 py-2 px-4 rounded-2xl mt-10 w-[80%] lg:w-[270px]'> 
           <FaLocationDot className='text-3xl text-orange-500'/>
-          <div className='text-center w-full'>
-            <h2 className='text-white text-2xl font-bold ml-3 text-center'>New York, New York, Manhattan</h2>
+          <div className='text-center'>
+            <h2 className='text-white text-xl text-center'>New York, New York</h2>
           </div>
         </div>
+
       </div>
 
       <div className='border-b-2 border-orange-500 relative flex items-center justify-center'>
