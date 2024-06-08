@@ -1,4 +1,9 @@
 import { RefObject } from "react";
+import { GiWeightLiftingUp } from "react-icons/gi";
+import { PiTelevisionFill } from "react-icons/pi";
+import { FaPaperPlane } from "react-icons/fa";
+import { MdGames } from "react-icons/md";
+
 
 type Props = {
   sectionRef : RefObject<HTMLDivElement>
@@ -26,6 +31,32 @@ const AboutSection = ({sectionRef} : Props) => {
           friendly websites. Now I learning algorithms, and trying to unraveling
           their mysteries.
         </p>
+      </div>
+
+
+      <h2 className="tracking-widest text-5xl text-white font-bold">Hobbies</h2>
+
+      <div className="my-5 grid grid-cols-2 lg:grid-cols-4 gap-2 justify-between">
+        <div className="flex flex-col justify-center items-center mb-2">
+          <GiWeightLiftingUp className="text-orange-500 text-8xl"/>
+          <h2 className="text-xl tracking-widest text-white">Exercise</h2>
+        </div>
+        
+        <div className="flex flex-col justify-center items-center mb-2">
+          <PiTelevisionFill className="text-orange-500 text-8xl"/>
+          <h2 className="text-xl tracking-widest text-white">Anime</h2>
+        </div>
+
+        <div className="flex flex-col justify-center items-center mb-2">
+          <FaPaperPlane className="text-orange-500 text-8xl"/>
+          <h2 className="text-xl tracking-widest text-white">Origami</h2>
+        </div>
+        
+        <div className="flex flex-col justify-center items-center mb-2">
+          <MdGames className="text-orange-500 text-8xl"/>
+          <h2 className="text-xl tracking-widest text-white">Video Games</h2>
+        </div>
+
       </div>
     </div>
   );
