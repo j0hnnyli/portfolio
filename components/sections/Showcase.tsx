@@ -27,11 +27,13 @@ const ShowCase = ({ sectionRef, fn, contact }: Props) => {
             </span>
           </h2>
 
+
           <TypeWriter
             strings={["Full Stack Developer", "Anime Lover", "A Gym-Goer"]}
             auto={true}
             loop={true}
           />
+
 
           <button
             onClick={() => fn(contact)}
