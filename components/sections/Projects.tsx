@@ -1,12 +1,5 @@
-import {RefObject} from "react";
+import { RefObject } from "react";
 import ProjectCard from "../ProjectCard";
-import {
-  ApiTag,
-  NextjsTag,
-  ResponsiveTag,
-  TailwindTag,
-  SupabaseTag,
-} from "../tags";
 
 type Props = {
   sectionRef : RefObject<HTMLDivElement>
@@ -27,12 +20,7 @@ const ProjectSection = ({sectionRef} : Props) => {
           gitLink="https://github.com/GummyJohn/swiftshop"
           img="/swiftshop.jpg"
           description="Ecomm webiste with full cart functionality"
-          tags={[
-            <NextjsTag key={0} />,
-            <SupabaseTag key={1} />,
-            <TailwindTag key={2} />,
-            <ResponsiveTag key={3} />,
-          ]}
+          tags={['NextJS', 'Supabase', 'Tailwind', 'Responsive']}
         />
 
         <ProjectCard
@@ -41,13 +29,7 @@ const ProjectSection = ({sectionRef} : Props) => {
           gitLink="https://github.com/GummyJohn/recipe_nextjs"
           img="/recipehub.jpg"
           description="Recipe Hub where user can explore new recipe and customize their personal recipe list"
-          tags={[
-            <ApiTag key={0} />,
-            <NextjsTag key={1} />,
-            <SupabaseTag key={2} />,
-            <TailwindTag key={3} />,
-            <ResponsiveTag key={4} />,
-          ]}
+          tags={['API', 'NextJS', 'Tailwind', 'Responsive']}
         />
       </div>
 
