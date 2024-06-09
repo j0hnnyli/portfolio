@@ -1,5 +1,6 @@
 import { RefObject } from "react";
 import ProjectCard from "../ProjectCard";
+import RevealAnimate from "../RevealAnimate";
 
 type Props = {
   sectionRef : RefObject<HTMLDivElement>
@@ -8,12 +9,12 @@ type Props = {
 
 const ProjectSection = ({sectionRef} : Props) => {
   return (
-    <div ref={sectionRef} className="mt-16 mb-10 max-w-[1300px] mx-auto w-[80%] lg:w-full lg:px-5 xl:px-0">
-      <h2 className="text-5xl text-white tracking-widest text-center">
-        Projects
-      </h2>
+    <div ref={sectionRef} className="mt-20 mb-10 max-w-[1300px] mx-auto w-[80%] lg:w-full lg:px-5 xl:px-0">
+      <RevealAnimate className="text-5xl text-white tracking-widest text-center" direction="x">
+        <p>Projects</p>
+      </RevealAnimate>
 
-      <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <RevealAnimate className="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-8 my-5" direction="x">
         <ProjectCard
           title="SwiftShop"
           link="https://swiftshop-chi.vercel.app/"
@@ -31,13 +32,13 @@ const ProjectSection = ({sectionRef} : Props) => {
           description="Recipe Hub where user can explore new recipe and customize their personal recipe list"
           tags={['API', 'NextJS', 'Tailwind', 'Responsive']}
         />
-      </div>
+      </RevealAnimate>
 
-      <div className="text-center">
+      <RevealAnimate className="text-center" direction="x">
         <button className="bg-orange-500 py-3 px-6 my-5 rounded-xl hover:bg-orange-800 hover:text-white">
           View All
         </button>
-      </div>
+      </RevealAnimate>
     </div>
   );
 };
