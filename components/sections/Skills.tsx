@@ -8,17 +8,17 @@ import {
 } from "react-icons/ri";
 import { BiLogoPostgresql } from "react-icons/bi";
 import SkillIcon from "../SkillIcon";
-
-
+import RevealAnimate from "../RevealAnimate";
 
 const SkillSection = () => {
   return (
-    <div 
-      className="mt-16 w-[90%] md:w-[80%] max-w-[1300px] mx-auto px-5"
-    >
-      <h2 className="text-5xl text-center tracking-widest text-white">
-        My Skills
-      </h2>
+    <div className="mt-20 w-[90%] md:w-[80%] max-w-[1300px] mx-auto px-5">
+      <RevealAnimate
+        className="text-5xl text-center tracking-widest text-white"
+        direction="x"
+      >
+        <p>My Skills</p>
+      </RevealAnimate>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-5 my-5">
         <SkillIcon
