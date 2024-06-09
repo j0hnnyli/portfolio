@@ -28,7 +28,7 @@ const ShowCase = ({ sectionRef, fn, contact }: Props) => {
           </h2>
 
           <TypeWriter
-            strings={["FrontEnd Developer", "Full Stack Developer"]}
+            strings={["Full Stack Developer", "Anime Lover", "A Gym-Goer"]}
             auto={true}
             loop={true}
           />

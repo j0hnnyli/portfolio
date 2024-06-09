@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { ReactNode, useState } from "react";
+import { useState } from "react";
 
 type Props = {
   title: string;
-  tags: ReactNode[];
+  tags: string[];
   img: string;
   link: string;
   gitLink: string;
@@ -43,9 +43,9 @@ const ProjectCard = ({ title, tags, link, gitLink, img, description }: Props) =>
 
           <div className="flex flex-wrap justify-center items-center gap-2 mt-2 md:w-[90%] mx-auto">
             {tags.map((tag, index) => (
-              <span key={index} >
+              <p key={index} className="py-1 px-3 rounded-xl bg-gray-500">
                 {tag}
-              </span>
+              </p>
             ))}
           </div>
           
