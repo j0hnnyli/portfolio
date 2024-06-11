@@ -12,13 +12,9 @@ const SkillIcon = ({ icon, title }: Props) => {
       className="flex flex-col justify-between items-center bg-gray-600  p-2 rounded-xl"
       direction="x"
     >
-      <div>
-        <div />
+      {icon}
 
-        {icon}
-
-        <p className="text-white text-2xl">{title}</p>
-      </div>
+      <p className="text-white text-2xl">{title}</p> 
     </RevealAnimate>
   );
 };
