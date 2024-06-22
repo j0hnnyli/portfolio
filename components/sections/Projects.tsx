@@ -1,6 +1,7 @@
 import { RefObject } from "react";
 import ProjectCard from "../ProjectCard";
 import RevealAnimate from "../RevealAnimate";
+import Link from "next/link";
 
 type Props = {
   sectionRef : RefObject<HTMLDivElement>
@@ -14,7 +15,7 @@ const ProjectSection = ({sectionRef} : Props) => {
         <p>Projects</p>
       </RevealAnimate>
 
-      <RevealAnimate className="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-8 my-5" direction="x">
+      <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-8 my-5">
         <ProjectCard
           title="SwiftShop"
           link="https://swiftshop-chi.vercel.app/"
@@ -25,19 +26,20 @@ const ProjectSection = ({sectionRef} : Props) => {
         />
 
         <ProjectCard
-          title="RecipeHub"
-          link="https://recipehub-swart.vercel.app/"
-          gitLink="https://github.com/GummyJohn/recipe_nextjs"
-          img="/recipehub.jpg"
-          description="Recipe Hub where user can explore new recipe and customize their personal recipe list"
-          tags={['API', 'NextJS', 'Tailwind', 'Responsive']}
+          title="Inventory Management"
+          link="https://inventorycrud.vercel.app/"
+          gitLink="https://github.com/GummyJohn/inventory-frontend-nextjs"
+          img="/inventoryCRUD.png"
+          description="Self Made Inventory Management API enabling users to create, update, delete, and restore products"
+          tags={['NodeJS', 'NextJS', 'Tailwind', 'Responsive', 'Express', 'MongoDB']}
         />
-      </RevealAnimate>
+      </div>
 
-      <RevealAnimate className="text-center" direction="x">
-        <button className="bg-orange-500 py-3 px-6 my-5 rounded-xl hover:bg-orange-800 hover:text-white">
+
+      <RevealAnimate className="text-center" direction="y">
+        <Link  href="/projects" className="bg-orange-500 py-3 px-6 my-5 rounded-xl hover:bg-orange-800 hover:text-white">
           View All
-        </button>
+        </Link>
       </RevealAnimate>
     </div>
   );
