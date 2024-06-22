@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import RevealAnimate from "./RevealAnimate";
+import AnimateVisible from "./AnimateVisible";
 
 type Props = {
   title: string;
@@ -11,20 +11,22 @@ type Props = {
   link: string;
   gitLink: string;
   description: string;
+  delayTime: number
 };
 
-const ProjectCard = ({
+const Card = ({
   title,
   tags,
   link,
   gitLink,
   img,
   description,
+  delayTime
 }: Props) => {
   const [isHover, setIsHover] = useState(false);
 
   return (
-    <RevealAnimate  direction="x">
+    <AnimateVisible delayTime={delayTime}>
       <div
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
@@ -93,8 +95,8 @@ const ProjectCard = ({
         )}
       </div>
 
-    </RevealAnimate>
+    </AnimateVisible>
   );
 };
 
-export default ProjectCard;
+export default Card;

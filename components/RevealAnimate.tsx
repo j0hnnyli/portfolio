@@ -4,7 +4,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 
 type Props = {
   children: ReactNode;
-  className: string;
+  className?: string;
   direction: "x" | "y";
   initialPlace ?: number;
 };
