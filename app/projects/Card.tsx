@@ -11,7 +11,6 @@ type Props = {
   link: string;
   gitLink: string;
   description: string;
-  delayTime: number
 };
 
 const Card = ({
@@ -21,12 +20,11 @@ const Card = ({
   gitLink,
   img,
   description,
-  delayTime
 }: Props) => {
   const [isHover, setIsHover] = useState(false);
 
   return (
-    <AnimateVisible delayTime={delayTime}>
+    <AnimateVisible>
       <div
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}

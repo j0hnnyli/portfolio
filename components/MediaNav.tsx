@@ -7,7 +7,8 @@ import {
 } from "@/components/ui/sheet";
 import { IoMenuOutline } from "react-icons/io5";
 import { FaHome, FaProjectDiagram, FaInfoCircle } from "react-icons/fa";
-import { IoIosContact } from "react-icons/io";
+import { IoIosContact, IoIosPaper } from "react-icons/io";
+import Link from "next/link";
 
 type Props = {
   fn: (ref: RefObject<HTMLDivElement>) => void;
@@ -64,6 +65,18 @@ const MediaNav = ({ fn, home, about, project, contact }: Props) => {
                   <h2 className="text-2xl ml-3">Contact</h2>
                 </div>
               </SheetClose>
+
+              <Link className="my-3"
+                href='https://docs.google.com/document/d/1pxgrKe6lZ5slfPeNosHrqwPWE2tZw6q1Z3kvQXVTe64/edit?usp=drive_link'
+                target='_blank'
+              >
+                <SheetClose >
+                  <div className="flex items-center">
+                    <IoIosPaper className="text-2xl text-orange-500"/>
+                    <h2 className="text-2xl ml-3"> Resume </h2>
+                  </div>
+                </SheetClose>
+              </Link>
             </div>
           </div>
         </SheetContent>

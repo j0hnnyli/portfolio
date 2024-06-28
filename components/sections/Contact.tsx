@@ -88,13 +88,15 @@ const ContactSection = ({ sectionRef }: Props) => {
       <RevealAnimate 
         initialPlace={100} 
         direction="y" 
-        className="h-[30vh] flex items-center justify-center"
+        className="h-[30vh] flex items-center justify-center px-2"
       >
-        <div className="flex justify-center">
+        <div className="flex">
           <RiDoubleQuotesL className="text-3xl text-orange-500" />
+
           <h2 className="text-2xl lg:text-4xl font-bold tracking-widest text-white text-center">
             Thank you for exploring my portfolio
           </h2>
+
           <RiDoubleQuotesR className="text-3xl text-orange-500 " />
         </div>
       </RevealAnimate>
