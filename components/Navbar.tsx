@@ -43,6 +43,13 @@ const Navbar = ({ fn, home, about, project, contact }: Props) => {
           >
             Contact
           </button>
+          <Link
+            href='https://docs.google.com/document/d/1pxgrKe6lZ5slfPeNosHrqwPWE2tZw6q1Z3kvQXVTe64/edit?usp=sharing'
+            target='_blank'
+            className="mx-2 hover:border-b hover:border-orange-500"
+          >
+            Resume
+          </Link>
         </div>
       </nav>
     </div>

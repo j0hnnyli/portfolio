@@ -14,9 +14,7 @@ const ProjectsPage = () => {
         </Link>
       </div>
       <div className='my-10  grid grid-cols-1 lg:grid-cols-2 gap-3'> 
-
         <Card
-          delayTime={0.5}
           title="SwiftShop"
           link="https://swiftshop-chi.vercel.app/"
           gitLink="https://github.com/GummyJohn/swiftshop"
@@ -26,7 +24,6 @@ const ProjectsPage = () => {
         />
 
         <Card
-          delayTime={0.65}
           title="RecipeHub"
           link="https://recipehub-swart.vercel.app/"
           gitLink="https://github.com/GummyJohn/recipe_nextjs"
@@ -36,7 +33,6 @@ const ProjectsPage = () => {
         />
 
         <Card
-          delayTime={0.75}
           title="Inventory Management"
           link="https://inventorycrud.vercel.app/"
           gitLink="https://github.com/GummyJohn/inventory-frontend-nextjs"
@@ -44,7 +40,6 @@ const ProjectsPage = () => {
           description="Self Made Inventory Management API enabling users to create, update, delete, and restore products"
           tags={['NodeJS', 'NextJS', 'Tailwind', 'Responsive', 'Express', 'MongoDB']}
         />
-
       </div>
     </>
   )

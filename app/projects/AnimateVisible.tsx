@@ -4,10 +4,9 @@ import { motion, useAnimation, useInView} from 'framer-motion'
 
 type Props = {
   children: ReactNode,
-  delayTime:  number;
 }
 
-const AnimateVisible = ({ children, delayTime } : Props) => {
+const AnimateVisible = ({ children } : Props) => {
   const ref = useRef(null)
   const isInview = useInView(ref, { once: true } )
   const animate = useAnimation()
@@ -18,7 +17,7 @@ const AnimateVisible = ({ children, delayTime } : Props) => {
       scale: 1,
       opacity: 1,
       transition: {
-        duration: 0.5, ease: 'easeInOut', delay: delayTime
+        duration: 0.5, ease: 'easeInOut',
       }
     }
   }
