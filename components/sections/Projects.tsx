@@ -18,7 +18,7 @@ const ProjectSection = ({sectionRef} : Props) => {
       <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-8 my-5">
         <ProjectCard
           title="SwiftShop"
-          link="https://swiftshop-chi.vercel.app/"
+          link="https://swiftshop-alpha.vercel.app/"
           gitLink="https://github.com/GummyJohn/swiftshop"
           img="/swiftshop.jpg"
           description="Ecomm webiste with full cart functionality"

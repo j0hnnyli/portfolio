@@ -16,7 +16,7 @@ const ProjectsPage = () => {
       <div className='my-10  grid grid-cols-1 lg:grid-cols-2 gap-3'> 
         <Card
           title="SwiftShop"
-          link="https://swiftshop-chi.vercel.app/"
+          link="https://swiftshop-alpha.vercel.app/"
           gitLink="https://github.com/GummyJohn/swiftshop"
           img="/swiftshop.jpg"
           description="Ecomm webiste with full cart functionality"
