@@ -56,14 +56,15 @@ const ShowCase = ({ sectionRef, fn, contact }: Props) => {
       </div>
 
       <div className="absolute bottom-5 left-6 text-white">
-        <FaLinkedinIn className="text-3xl my-3" />
+        <FaLinkedinIn className="text-3xl my-3 hover:text-orange-500" />
+
         <Link href="https://github.com/GummyJohn" target="_blank">
           <FaGithub className="text-3xl my-3 hover:text-orange-500" />
         </Link>
       </div>
 
       <div className="absolute bottom-[100px] md:bottom-[140px] -right-20 text-white rotate-90 flex items-center">
-        <h2 className="tracking-widest md:text-xl">lijohnny31@gmail.com</h2>
+        <h2 className="tracking-widest md:text-xl">lijohnny21@gmail.com</h2>
       </div>
     </div>
   );

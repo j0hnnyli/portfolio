@@ -40,6 +40,15 @@ const ProjectsPage = () => {
           description="Self Made Inventory Management API enabling users to create, update, delete, and restore products"
           tags={['NodeJS', 'NextJS', 'Tailwind', 'Responsive', 'Express', 'MongoDB']}
         />
+        
+        <Card
+          title="Anime Horizon"
+          link="https://anime-horizon.vercel.app/"
+          gitLink="https://github.com/GummyJohn/anime-horizon"
+          img="/animehorizon.png"
+          description="Anime watch list app enabling users to manage their favorite anime and explore manga titles"
+          tags={['React', 'Tailwind', 'Responsive', 'API']}
+        />
       </div>
     </>
   )
