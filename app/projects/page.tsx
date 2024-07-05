@@ -20,7 +20,7 @@ const ProjectsPage = () => {
           gitLink="https://github.com/GummyJohn/swiftshop"
           img="/swiftshop.jpg"
           description="Ecomm webiste with full cart functionality"
-          tags={['NextJS', 'Supabase', 'Tailwind', 'Responsive']}
+          tags={['NextJS', 'Supabase', 'Tailwind', 'Responsive', 'Typescript']}
         />
 
         <Card
@@ -29,7 +29,7 @@ const ProjectsPage = () => {
           gitLink="https://github.com/GummyJohn/recipe_nextjs"
           img="/recipehub.jpg"
           description="Recipe Hub where user can explore new recipe and customize their personal recipe list"
-          tags={['API', 'NextJS', 'Tailwind', 'Responsive']}
+          tags={['API', 'NextJS', 'Tailwind', 'Responsive', 'Typescript']}
         />
 
         <Card
@@ -38,7 +38,7 @@ const ProjectsPage = () => {
           gitLink="https://github.com/GummyJohn/inventory-frontend-nextjs"
           img="/inventoryCRUD.png"
           description="Self Made Inventory Management API enabling users to create, update, delete, and restore products"
-          tags={['NodeJS', 'NextJS', 'Tailwind', 'Responsive', 'Express', 'MongoDB']}
+          tags={['NodeJS', 'NextJS', 'Tailwind', 'Responsive', 'Express', 'MongoDB', 'Typescript']}
         />
         
         <Card
@@ -47,7 +47,7 @@ const ProjectsPage = () => {
           gitLink="https://github.com/GummyJohn/anime-horizon"
           img="/animehorizon.png"
           description="Anime watch list app enabling users to manage their favorite anime and explore manga titles"
-          tags={['React', 'Tailwind', 'Responsive', 'API']}
+          tags={['React', 'Tailwind', 'Responsive', 'API', 'Javascript' ]}
         />
       </div>
     </>
