@@ -22,7 +22,7 @@ const ProjectSection = ({sectionRef} : Props) => {
           gitLink="https://github.com/GummyJohn/swiftshop"
           img="/swiftshop.jpg"
           description="Ecomm webiste with full cart functionality"
-          tags={['NextJS', 'Supabase', 'Tailwind', 'Responsive']}
+          tags={['NextJS', 'Supabase', 'Tailwind', 'Responsive', 'Typescript']}
         />
 
         <ProjectCard
@@ -31,7 +31,7 @@ const ProjectSection = ({sectionRef} : Props) => {
           gitLink="https://github.com/GummyJohn/inventory-frontend-nextjs"
           img="/inventoryCRUD.png"
           description="Self Made Inventory Management API enabling users to create, update, delete, and restore products"
-          tags={['NodeJS', 'NextJS', 'Tailwind', 'Responsive', 'Express', 'MongoDB']}
+          tags={['NodeJS', 'NextJS', 'Tailwind', 'Responsive', 'Express', 'MongoDB', 'Typescript']}
         />
       </div>
 
