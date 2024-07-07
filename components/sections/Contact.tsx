@@ -44,7 +44,7 @@ const ContactSection = ({ sectionRef }: Props) => {
           <div className="flex items-center justify-between bg-stone-500 py-2 px-4 rounded-2xl mx-5 w-full my-5 lg:my-0">
             <FaPhoneAlt className="text-3xl text-orange-500" />
             <div className="text-center w-full">
-              <h2 className="text-white text-xl">(347) 395-2298</h2>
+              <h2 className="text-white text-xl">(347) 681-2466</h2>
             </div>
           </div>
 
