@@ -1,7 +1,7 @@
 import { RefObject } from "react";
-import ProjectCard from "../ProjectCard";
 import RevealAnimate from "../RevealAnimate";
 import Link from "next/link";
+import Card from "../Card";
 
 type Props = {
   sectionRef : RefObject<HTMLDivElement>
@@ -16,7 +16,7 @@ const ProjectSection = ({sectionRef} : Props) => {
       </RevealAnimate>
 
       <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-8 my-5">
-        <ProjectCard
+        <Card
           title="SwiftShop"
           link="https://swiftshop-alpha.vercel.app/"
           gitLink="https://github.com/GummyJohn/swiftshop"
@@ -25,7 +25,7 @@ const ProjectSection = ({sectionRef} : Props) => {
           tags={['NextJS', 'Supabase', 'Tailwind', 'Responsive', 'Typescript']}
         />
 
-        <ProjectCard
+        <Card
           title="Inventory Management"
           link="https://inventorycrud.vercel.app/"
           gitLink="https://github.com/GummyJohn/inventory-frontend-nextjs"

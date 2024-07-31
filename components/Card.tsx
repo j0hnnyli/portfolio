@@ -13,14 +13,7 @@ type Props = {
   description: string;
 };
 
-const Card = ({
-  title,
-  tags,
-  link,
-  gitLink,
-  img,
-  description,
-}: Props) => {
+const Card = ({ title, tags, link, gitLink, img, description }: Props) => {
   const [isHover, setIsHover] = useState(false);
 
   return (
@@ -61,9 +54,7 @@ const Card = ({
               ))}
             </div>
 
-            <p className="my-3 text-sm lg:text-xl text-center">
-              {description}
-            </p>
+            <p className="my-3 text-sm lg:text-xl text-center">{description}</p>
 
             <div className="flex">
               <Link
@@ -92,7 +83,6 @@ const Card = ({
           </div>
         )}
       </div>
-
     </AnimateVisible>
   );
 };
