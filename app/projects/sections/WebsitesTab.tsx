@@ -11,6 +11,7 @@ const WebsitesTab = () => {
         img="/swiftshop.jpg"
         description="Ecomm webiste with full cart functionality"
         tags={["NextJS", "Supabase", "Tailwind", "Responsive", "Typescript"]}
+        type="website"
       />
 
       <Card
@@ -20,6 +21,7 @@ const WebsitesTab = () => {
         img="/recipehub.jpg"
         description="Recipe Hub where user can explore new recipe and customize their personal recipe list"
         tags={["API", "NextJS", "Tailwind", "Responsive", "Typescript"]}
+        type="website"
       />
 
       <Card
@@ -37,6 +39,7 @@ const WebsitesTab = () => {
           "MongoDB",
           "Typescript",
         ]}
+        type="website"
       />
 
       <Card
@@ -46,6 +49,7 @@ const WebsitesTab = () => {
         img="/animehorizon.png"
         description="Anime watch list app enabling users to manage their favorite anime and explore manga titles"
         tags={["React", "Tailwind", "Responsive", "API", "Javascript"]}
+        type="website"
       />
     </div>
   );
