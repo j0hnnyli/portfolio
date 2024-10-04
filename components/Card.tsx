@@ -11,9 +11,10 @@ type Props = {
   link: string;
   gitLink: string;
   description: string;
+  type: 'game' | 'website'
 };
 
-const Card = ({ title, tags, link, gitLink, img, description }: Props) => {
+const Card = ({ title, tags, link, gitLink, img, description, type }: Props) => {
   const [isHover, setIsHover] = useState(false);
 
   return (
@@ -62,7 +63,7 @@ const Card = ({ title, tags, link, gitLink, img, description }: Props) => {
                 target="_blank"
                 className="py-2 px-4 bg-purple-500 text-white hover:bg-purple-700 cursor-pointer mx-2 rounded-xl"
               >
-                View
+                {type === 'website' ? 'View' : 'Play'}
               </Link>
 
               <Link
