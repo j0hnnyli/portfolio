@@ -28,6 +28,7 @@ const ProjectSection = ({ sectionRef }: Props) => {
           img="/swiftshop.jpg"
           description="Ecomm webiste with full cart functionality"
           tags={["NextJS", "Supabase", "Tailwind", "Responsive", "Typescript"]}
+          type='website'
         />
 
         <Card
@@ -45,6 +46,7 @@ const ProjectSection = ({ sectionRef }: Props) => {
             "MongoDB",
             "Typescript",
           ]}
+          type="website"
         />
       </div>
 
