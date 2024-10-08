@@ -38,13 +38,13 @@ export default function Home() {
       />
       <Showcase sectionRef={homeRef} fn={scrollToRef} contact={contactRef} />
 
-      <div className="bg-fixed h-[60vh] bg-[url(/developer.jpg)] bg-center bg-no-repeat bg-cover"></div>
+      <div className="bg-fixed h-[60vh] bg-[url(/developer.jpg)] bg-center bg-no-repeat"></div>
 
       <AboutSection sectionRef={aboutRef} />
       <SkillSection />
     
 
-      <div className="bg-fixed h-[60vh] bg-[url(/projectsbgseparator.png)] bg-center bg-no-repeat bg-cover"></div>
+      <div className="bg-fixed h-[60vh] bg-[url(/projectsbgseparator.png)] bg-center bg-no-repeat"></div>
       <ProjectSection sectionRef={projectsRef} />
       <ContactSection sectionRef={contactRef} />
     </>
