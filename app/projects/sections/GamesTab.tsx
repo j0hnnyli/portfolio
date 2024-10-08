@@ -11,7 +11,6 @@ const GamesTab = () => {
           link="https://j0hnnyli.github.io/ball-havoc/"
           gitLink="https://github.com/j0hnnyli/ball-havoc?tab=readme-ov-file"
           img="/ballhavoc.png"
-          description="Interactive challenge where players tries to stay alive"
           tags={["HTML", "CSS", "Canvas", "Javascript"]}
           type='game'
         />

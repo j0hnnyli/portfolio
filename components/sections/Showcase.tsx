@@ -17,7 +17,7 @@ const ShowCase = ({ sectionRef, fn, contact }: Props) => {
     <div
       ref={sectionRef}
       style={{ boxShadow: "0 2px 5px rgba(0, 0, 0, 0.2)" }}
-      className="h-[90vh] relative flex flex-col-reverse lg:flex-row items-center justify-center shadow-black p-2 mt-16 max-w-[1300px] mx-auto px-5 pb-5"
+      className="h-[90vh] relative flex flex-col-reverse lg:flex-row items-center justify-center shadow-black p-2 mt-16 max-w-[1300px] mx-auto px-5 pb-5 mb-2"
     >
       <div className="w-[90%] h-[50%] lg:w-[50%] md:flex justify-between items-center p-2">
         <RevealAnimate className="md:w-[70%] mx-auto pl-5 " direction="x">
