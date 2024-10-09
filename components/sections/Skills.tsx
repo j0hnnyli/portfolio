@@ -12,63 +12,66 @@ import RevealAnimate from "../RevealAnimate";
 
 const SkillSection = () => {
   return (
-    <div className="mt-20 w-[90%] md:w-[80%] max-w-[1300px] mx-auto px-5">
+    <div className="mt-20 w-[90%] md:w-[80%] max-w-[1300px] mx-auto px-5 mb-10">
       <RevealAnimate
         className="text-5xl text-center tracking-widest text-white"
         direction="x"
       >
-        <p>My Skills</p>
+        <p>
+          <span className="text-secondary_orange">M</span>y 
+          <span className="text-secondary_orange ml-5">S</span>kills
+        </p>
       </RevealAnimate>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-5 my-5">
-        <SkillIcon
-          title="HTML"
-          icon={<FaHtml5 className="text-5xl text-orange-600" />}
-        />
-        <SkillIcon
-          title="CSS"
-          icon={<FaCss3 className="text-5xl text-blue-500" />}
-        />
-        <SkillIcon
-          title="Javascript"
-          icon={<IoLogoJavascript className="text-5xl text-yellow-400" />}
-        />
-        <SkillIcon
-          title="Typescript"
-          icon={<SiTypescript className="text-5xl text-blue-500" />}
-        />
-        <SkillIcon
-          title="NodeJS"
-          icon={<FaNodeJs className="text-5xl text-green-600" />}
-        />
-        <SkillIcon
-          title="React"
-          icon={<FaReact className="text-5xl text-blue-500" />}
-        />
-        <SkillIcon
-          title="NextJS"
-          icon={<RiNextjsFill className="text-5xl text-slate-800" />}
-        />
-        <SkillIcon
-          title="Tailwind"
-          icon={<RiTailwindCssFill className="text-5xl text-blue-400" />}
-        />
-        <SkillIcon
-          title="GitHub"
-          icon={<FaGithub className="text-5xl text-slate-900" />}
-        />
-        <SkillIcon
-          title="Supabase"
-          icon={<RiSupabaseFill className="text-5xl text-green-400" />}
-        />
-        <SkillIcon
-          title="MongoDB"
-          icon={<SiMongodb className="text-5xl text-green-700" />}
-        />
-        <SkillIcon
-          title="PostgreSQL"
-          icon={<BiLogoPostgresql className="text-5xl text-blue-600" />}
-        />
+          <SkillIcon
+            title="HTML"
+            icon= {<FaHtml5 className="text-5xl text-orange-600" />}
+          />
+          <SkillIcon
+            title="CSS"
+            icon= {<FaCss3 className="text-5xl text-blue-500"  />}
+          />
+          <SkillIcon
+            title= "Javascript"
+            icon= {<IoLogoJavascript className="text-5xl text-yellow-400" />}
+          />
+          <SkillIcon
+            title= "Typescript"
+            icon= {<SiTypescript className="text-5xl text-blue-500" />}
+          />
+          <SkillIcon
+            title= "NodeJS"
+            icon= {<FaNodeJs className="text-5xl text-green-600"/>}
+          />
+          <SkillIcon
+            title= "React"
+            icon= {<FaReact className="text-5xl text-blue-500"/>}
+          />
+          <SkillIcon
+            title= "NextJs"
+            icon= {<RiNextjsFill className="text-5xl text-slate-800"/>}
+          />
+          <SkillIcon
+            title= "Tailwind"
+            icon= {<RiTailwindCssFill className="text-5xl text-blue-400"/>}
+          />
+          <SkillIcon
+            title= "GitHub"
+            icon= {<FaGithub className="text-5xl text-slate-900"/>}
+          />
+          <SkillIcon
+            title= "Supabase"
+            icon= {<RiSupabaseFill className="text-5xl text-green-400"/>}
+          />
+          <SkillIcon
+            title= "MongoDB"
+            icon= {<SiMongodb className="text-5xl text-green-700" />}
+          />
+          <SkillIcon
+            title= "PostgreSQL"
+            icon= {<BiLogoPostgresql className="text-5xl text-blue-600" />}
+          />
       </div>
     </div>
   );

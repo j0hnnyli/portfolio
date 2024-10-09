@@ -36,9 +36,14 @@ export default function Home() {
         project={projectsRef}
         contact={contactRef}
       />
-      <Showcase sectionRef={homeRef} fn={scrollToRef} contact={contactRef} />
+      <Showcase sectionRef={homeRef} />
+      
+      <div className="bg-scroll lg:bg-fixed h-[30vh] lg:h-[60vh] bg-[url(/developer.jpg)] bg-center bg-no-repeat bg-cover"></div>
+
       <AboutSection sectionRef={aboutRef} />
       <SkillSection />
+    
+      <div className="bg-scroll lg:bg-fixed h-[30vh] lg:h-[60vh] bg-[url(/projectsbgseparator.png)] bg-center bg-no-repeat bg-cover"></div>
       <ProjectSection sectionRef={projectsRef} />
       <ContactSection sectionRef={contactRef} />
     </>

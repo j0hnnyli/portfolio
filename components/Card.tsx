@@ -3,18 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import AnimateVisible from "./AnimateVisible";
+import { Projects } from "@/lib/types/projectType";
 
-type Props = {
-  title: string;
-  tags: string[];
-  img: string;
-  link: string;
-  gitLink: string;
-  description: string;
-  type: 'game' | 'website'
-};
 
-const Card = ({ title, tags, link, gitLink, img, description, type }: Props) => {
+const Card = ({ title, tags, link, gitLink, img, type }: Projects) => {
   const [isHover, setIsHover] = useState(false);
 
   return (
@@ -22,16 +14,14 @@ const Card = ({ title, tags, link, gitLink, img, description, type }: Props) => 
       <div
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
-        className="relative h-[300px] w-full rounded-2xl overflow-hidden"
+        className="relative w-full overflow-hidden"
       >
         <Image
           src={img}
           alt={title}
           width={300}
           height={300}
-          className={`w-full h-full object-cover rounded-2xl ${
-            isHover && "scale-125 ease-in-out duration-200"
-          } `}
+          className={`w-full h-full object-cover`}
         />
 
         <button
@@ -42,20 +32,18 @@ const Card = ({ title, tags, link, gitLink, img, description, type }: Props) => 
         </button>
 
         {isHover && (
-          <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-80 text-white p-4 rounded-2xl overflow-auto pt-10">
-            <h2 className="text-2xl tracking-widest font-bold text-orange-500 text-center">
+          <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-80 text-white p-4 overflow-auto pt-10">
+            <h2 className="text-xl tracking-widest font-bold text-orange-500 text-center">
               {title}
             </h2>
 
-            <div className="flex flex-wrap justify-center items-center gap-2 my-2 md:w-[90%] mx-auto">
+            <div className="flex flex-wrap justify-center items-center gap-2 my-2">
               {tags.map((tag, index) => (
-                <p key={index} className="py-1 px-3 rounded-xl bg-gray-500">
+                <p key={index} className="py-1 px-2 rounded-xl bg-gray-500 text-sm">
                   {tag}
                 </p>
               ))}
             </div>
-
-            <p className="my-3 text-sm lg:text-xl text-center">{description}</p>
 
             <div className="flex">
               <Link

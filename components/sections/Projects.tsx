@@ -2,6 +2,7 @@ import { RefObject } from "react";
 import RevealAnimate from "../RevealAnimate";
 import Link from "next/link";
 import Card from "../Card";
+import projects from "@/lib/content/projects";
 
 type Props = {
   sectionRef: RefObject<HTMLDivElement>;
@@ -17,47 +18,34 @@ const ProjectSection = ({ sectionRef }: Props) => {
         className="text-5xl text-white tracking-widest text-center"
         direction="x"
       >
-        <p>Projects</p>
+        <p>
+          <span className="text-secondary_orange border-b-2 border-b-secondary_orange">P</span>
+          rojects
+        </p>
       </RevealAnimate>
 
-      <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-8 my-5">
-        <Card
-          title="SwiftShop"
-          link="https://swiftshop-alpha.vercel.app/"
-          gitLink="https://github.com/j0hnnyli/swiftshop"
-          img="/swiftshop.jpg"
-          description="Ecomm webiste with full cart functionality"
-          tags={["NextJS", "Supabase", "Tailwind", "Responsive", "Typescript"]}
-          type='website'
-        />
-
-        <Card
-          title="Inventory Management"
-          link="https://inventorycrud.vercel.app/"
-          gitLink="https://github.com/j0hnnyli/inventory-server"
-          img="/inventoryCRUD.png"
-          description="Self Made Inventory Management API enabling users to create, update, delete, and restore products"
-          tags={[
-            "NodeJS",
-            "NextJS",
-            "Tailwind",
-            "Responsive",
-            "Express",
-            "MongoDB",
-            "Typescript",
-          ]}
-          type="website"
-        />
+      <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-5">
+        {projects.map(({title, link, gitLink, img, tags, type}) => (
+          <Card
+            key={title}
+            title={title}
+            link={link}
+            gitLink={gitLink}
+            img={img}
+            tags={tags}
+            type={type}
+          />
+        ))}
       </div>
 
-      <RevealAnimate className="text-center" direction="y">
+      {/* <RevealAnimate className="text-center" direction="y">
         <Link
           href="/projects"
           className="bg-orange-500 py-3 px-6 my-5 rounded-xl hover:bg-orange-800 hover:text-white"
         >
           View All
         </Link>
-      </RevealAnimate>
+      </RevealAnimate> */}
     </div>
   );
 };
