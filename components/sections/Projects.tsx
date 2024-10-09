@@ -24,7 +24,7 @@ const ProjectSection = ({ sectionRef }: Props) => {
         </p>
       </RevealAnimate>
 
-      <div className="mt-5 grid grid-cols-1 lg:grid-cols-3 gap-8 my-5">
+      <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-5">
         {projects.map(({title, link, gitLink, img, tags, type}) => (
           <Card
             key={title}
