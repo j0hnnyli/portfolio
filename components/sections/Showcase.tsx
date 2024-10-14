@@ -17,8 +17,8 @@ const ShowCase = ({ sectionRef }: Props) => {
       style={{ boxShadow: "0 2px 5px rgba(0, 0, 0, 0.2)" }}
       className="h-[90vh] relative flex flex-col-reverse lg:flex-row items-center justify-center shadow-black p-2 mt-14 max-w-[1300px] mx-auto px-5 pb-5 mb-2"
     >
-      <div className="w-[90%] h-[50%] lg:w-[50%] md:flex justify-center items-center p-2">
-        <RevealAnimate className="md:w-[70%] mx-auto pl-10 " direction="x">
+      <div className="w-[90%] lg:w-[50%] flex justify-center items-center p-2">
+        <RevealAnimate className="md:w-[70%] mx-auto" direction="x">
           <h2>
             <span className="text-white text-lg md:text-4xl">I&apos;M </span>
             <span className="text-orange-500 text-3xl md:text-5xl ml-2">
@@ -28,7 +28,7 @@ const ShowCase = ({ sectionRef }: Props) => {
 
 
           <TypeWriter
-            strings={["Full Stack Developer", "Anime Lover", "A Gym-Goer"]}
+            strings={["Web Developer", "Anime Lover", "A Gym-Goer"]}
             auto={true}
             loop={true}
           />
@@ -47,9 +47,11 @@ const ShowCase = ({ sectionRef }: Props) => {
       </div>
 
       <div className="absolute bottom-5 left-6 text-white">
-        <FaLinkedinIn className="text-3xl my-3 hover:text-orange-500" />
+        <Link href="https://www.linkedin.com/in/johnny-li-3a0482331" target="_blank">
+          <FaLinkedinIn className="text-3xl my-3 hover:text-orange-500" />
+        </Link>
 
-        <Link href="https://github.com/GummyJohn" target="_blank">
+        <Link href="https://github.com/j0hnnyli" target="_blank">
           <FaGithub className="text-3xl my-3 hover:text-orange-500" />
         </Link>
       </div>

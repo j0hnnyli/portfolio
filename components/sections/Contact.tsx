@@ -77,11 +77,13 @@ const ContactSection = ({ sectionRef }: Props) => {
           style={{ backgroundColor: "#3b3b3b" }}
           className="bg-white py-2 px-4 absolute flex items-center -top-5"
         >
-          <Link href="https://github.com/GummyJohn" target="_blank">
+          <Link href="https://github.com/j0hnnyli" target="_blank">
             <FaGithub className="text-3xl text-orange-500 mx-2 hover:text-white" />
           </Link>
 
-          <FaLinkedinIn className="text-3xl text-orange-500 mx-2" />
+          <Link href="https://www.linkedin.com/in/johnny-li-3a0482331">
+            <FaLinkedinIn className="text-3xl text-orange-500 mx-2 hover:text-white" />
+          </Link>
         </div>
       </RevealAnimate>
 
