@@ -27,10 +27,10 @@ const projects : Array<Projects> = [
   },
   {
     title: "Anime Horizon",
-    link: "https://anime-horizon.vercel.app/",
-    gitLink: "https://github.com/j0hnnyli/anime-horizon",
+    link: "https://animehorizon.vercel.app/",
+    gitLink: "https://github.com/j0hnnyli/AnimeHorizon",
     img: "/animehorizon.png",
-    tags: ["React", "Tailwind", "Responsive", "API", "Javascript"],
+    tags: ["NextJS", "Tailwind", "Responsive", "API", "Typescript"],
     type: "website"
   },
   {
