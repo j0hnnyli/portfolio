@@ -14,7 +14,7 @@ const Card = ({ title, tags, link, gitLink, img, type }: Projects) => {
       <div
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
-        className="relative w-full overflow-hidden"
+        className="relative w-full h-[200px] overflow-hidden"
       >
         <Image
           src={img}

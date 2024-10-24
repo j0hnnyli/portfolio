@@ -37,15 +37,6 @@ const ProjectSection = ({ sectionRef }: Props) => {
           />
         ))}
       </div>
-
-      {/* <RevealAnimate className="text-center" direction="y">
-        <Link
-          href="/projects"
-          className="bg-orange-500 py-3 px-6 my-5 rounded-xl hover:bg-orange-800 hover:text-white"
-        >
-          View All
-        </Link>
-      </RevealAnimate> */}
     </div>
   );
 };
