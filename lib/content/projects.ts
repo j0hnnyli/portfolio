@@ -13,7 +13,7 @@ const projects : Array<Projects> = [
     title: "RecipeHub",
     link: "https://recipehub-swart.vercel.app/",
     gitLink: "https://github.com/j0hnnyli/recipe_nextjs",
-    img: "/recipehub.jpg",
+    img: "/recipehub.png",
     tags: ["API", "NextJS", "Tailwind", "Responsive", "Typescript"],
     type: "website"
   },
