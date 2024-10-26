@@ -5,7 +5,7 @@ const projects : Array<Projects> = [
     title: "SwiftShop",
     link: "https://swiftshop-alpha.vercel.app/",
     gitLink: "https://github.com/j0hnnyli/swiftshop",
-    img: "/swiftshop.jpg",
+    img: "/swiftshop.png",
     tags: ["NextJS", "Supabase", "Tailwind", "Responsive", "Typescript"],
     type: 'website'
   },
