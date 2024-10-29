@@ -6,7 +6,7 @@ const projects : Array<Projects> = [
     link: "https://swiftshop-alpha.vercel.app/",
     gitLink: "https://github.com/j0hnnyli/swiftshop",
     img: "/swiftshop.png",
-    tags: ["NextJS", "Supabase", "Tailwind", "Responsive", "Typescript"],
+    tags: ["NextJS", "Supabase", "Tailwind", "Responsive", "Typescript", "Framer-Motion", "Shadcn"],
     type: 'website'
   },
   {
@@ -14,7 +14,7 @@ const projects : Array<Projects> = [
     link: "https://recipehub-swart.vercel.app/",
     gitLink: "https://github.com/j0hnnyli/recipe_nextjs",
     img: "/recipehub.png",
-    tags: ["API", "NextJS", "Tailwind", "Responsive", "Typescript"],
+    tags: ["API", "NextJS", "Tailwind", "Responsive", "Typescript", "Shadcn"],
     type: "website"
   },
   {
@@ -22,7 +22,7 @@ const projects : Array<Projects> = [
     link: "https://inventorycrud.vercel.app/",
     gitLink: "https://github.com/j0hnnyli/inventory-server",
     img: "/inventoryCRUD.png",
-    tags: ["NodeJS", "NextJS", "Tailwind", "Responsive", "Express", "MongoDB", "Typescript"],
+    tags: ["NodeJS", "NextJS", "Tailwind", "Responsive", "Express", "MongoDB", "Typescript", "Shadcn"],
     type: "website"
   },
   {
@@ -30,7 +30,7 @@ const projects : Array<Projects> = [
     link: "https://animehorizon.vercel.app/",
     gitLink: "https://github.com/j0hnnyli/AnimeHorizon",
     img: "/animehorizon.png",
-    tags: ["NextJS", "Tailwind", "Responsive", "API", "Typescript"],
+    tags: ["NextJS", "Tailwind", "Responsive", "API", "Typescript", "Shadcn"],
     type: "website"
   },
   {
