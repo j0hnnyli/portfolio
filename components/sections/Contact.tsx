@@ -2,7 +2,7 @@ import { RefObject } from "react";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 import Link from "next/link";
@@ -77,12 +77,12 @@ const ContactSection = ({ sectionRef }: Props) => {
           style={{ backgroundColor: "#3b3b3b" }}
           className="bg-white py-2 px-4 absolute flex items-center -top-5"
         >
+          <Link href="https://x.com/Johnnyli31" target="_blank">
+            <FaXTwitter className="text-3xl text-orange-500 mx-2 hover:text-white" />
+          </Link>
+          
           <Link href="https://github.com/j0hnnyli" target="_blank">
             <FaGithub className="text-3xl text-orange-500 mx-2 hover:text-white" />
-          </Link>
-
-          <Link href="https://www.linkedin.com/in/johnny-li-3a0482331">
-            <FaLinkedinIn className="text-3xl text-orange-500 mx-2 hover:text-white" />
           </Link>
         </div>
       </RevealAnimate>

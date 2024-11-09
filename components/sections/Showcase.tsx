@@ -1,5 +1,5 @@
 import { RefObject } from "react";
-import { FaLinkedinIn } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import TypeWriter from "../TypeWriter";
 import Image from "next/image";
@@ -47,8 +47,8 @@ const ShowCase = ({ sectionRef }: Props) => {
       </div>
 
       <div className="absolute bottom-5 left-6 text-white">
-        <Link href="https://www.linkedin.com/in/johnny-li-3a0482331" target="_blank">
-          <FaLinkedinIn className="text-3xl my-3 hover:text-orange-500" />
+        <Link href="https://x.com/Johnnyli31" target="_blank">
+          <FaXTwitter className="text-3xl my-3 hover:text-orange-500" />
         </Link>
 
         <Link href="https://github.com/j0hnnyli" target="_blank">
